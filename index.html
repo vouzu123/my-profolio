@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XB Studio Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2 class="logo">XB Studio</h2>
+
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Xin chào, tôi là Quốc Bửu</h1>
+            <p>Web Developer | Graphic Designer | Founder of XB Studio</p>
+            <button onclick="scrollToSection('projects')">
+                Xem Dự Án
+            </button>
+        </div>
+    </section>
+     <div class="avatar">
+    <img src="4x6.jpg" alt="Ảnh đại diện">
+   </div>
+
+    <section id="about">
+        <h2>Giới Thiệu</h2>
+        <p>
+            Tôi là một lập trình viên web và nhà thiết kế đồ họa,
+            yêu thích sáng tạo các sản phẩm kỹ thuật số hiện đại,
+            tối giản và chuyên nghiệp.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Kỹ Năng</h2>
+
+        <div class="skill-box">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="bar">
+                    <div class="progress html"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="bar">
+                    <div class="progress css"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="bar">
+                    <div class="progress js"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Dự Án</h2>
+
+        <div class="project-container">
+
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>Website giới thiệu bản thân.</p>
+            </div>
+
+            <div class="card">
+                <h3>XB Studio Brand</h3>
+                <p>Thiết kế nhận diện thương hiệu thời trang.</p>
+            </div>
+           
+
+            <div class="card">
+                <h3>Gaming Logo</h3>
+                <p>Bộ logo gaming thiết kế bằng Illustrator.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Liên Hệ</h2>
+
+        <form>
+            <input type="text" placeholder="Họ tên">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Nội dung"></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 XB Studio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
