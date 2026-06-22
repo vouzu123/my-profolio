@@ -168,11 +168,13 @@ footer{
     padding:20px;
     background:#000;
 }
-.avatar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.profile{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    min-height:100vh;
 }
 
 .avatar img{
@@ -181,56 +183,82 @@ footer{
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #00d4ff;
-}.info{
+}
+.info{
     text-align: center;
     font-size: 18px;
     margin-top: 15px;
 }
+
+
+
+
 .profile{
-    text-align: center;
-    margin-top: 100px;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
 
-.profile img{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #00d4ff;
-    box-shadow: 0 0 20px #00d4ff;
-}
 
 .name{
-    margin-top: 30px;
-    font-size: 60px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: white;
-    text-shadow: 0 0 15px #00d4ff;
-    font-family: Impact, Haettenschweiler, 'Montserrat', sans-serif;
+    margin-top:35px;
+
+    font-family:'Bebas Neue',sans-serif;
+
+    font-size:70px;
+
+    letter-spacing:4px;
+
+    color:white;
+
+    text-shadow:
+    0 0 10px #00d4ff,
+    0 0 25px #00d4ff;
+}
+
+.line{
+    width:320px;
+    height:5px;
+
+    background:#00d4ff;
+
+    margin:15px auto 35px auto;
 }
 
 .address{
-    margin-top: 20px;
-    font-size: 28px;
-    font-weight: 600;
-    color: white;
+    color:white;
+
+    font-size:28px;
+
+    font-weight:500;
+
+    margin-bottom:20px;
 }
 
-.address::after{
-    content: "";
-    display: block;
-    width: 200px;
-    height: 4px;
-    background: #00d4ff;
-    margin: 20px auto;
-}   
-.phone a{
-    color: #00d4ff;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+.address i{
+    color:#00d4ff;
+    margin-right:15px;
 }
 
-.phone a:hover{
-    text-shadow: 0 0 10px #00d4ff;
+.phone{
+    color:white;
+
+    font-size:32px;
+
+    font-weight:600;
+}
+
+.phone i{
+    color:#00d4ff;
+    margin-right:15px;
+}
+.name,
+.address,
+.phone{
+    display:block;
+    width:100%;
+    text-align:center;
 }
